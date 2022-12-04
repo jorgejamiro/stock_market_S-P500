@@ -1,0 +1,34 @@
+title: <h2 align='center'>Predicción en Bolsa</h2>
+intro_1: **S&P 500 (Standard & Poor's 500)** es un *Índice de Mercado* que sigue la pista al rendimiento de las acciones de 500 grandes compañías que cotizan en el *Mercado de Valores* en los Estados Unidos.
+intro_2: En este proyecto, nuestro objetivo es predecir el índice bursátil S&P 500 de acuerdo con los **tipos de interés** y las **tasas de empleo**:
+Interest Rates: Tipos de Interés
+Employment: Empleo
+S&P 500 Price: S&P 500 Precio
+count: Recuento
+mean: Media
+std: Desviación Estándar (SD)
+min: Mínimo
+25%: Primer Cuartil (Q1)
+50%: Mediana / Segundo Cuartil (Q2)
+75%: Tercer Cuartil (Q3)
+max: Máximo
+comment_describe: La tabla más arriba muestra algunos datos estadísticos interesantes de nuestro conjunto de datos. Por ejemplo, que tiene justamente mil entradas y que la media de los tipos de interés es de 2,19 aproximadamente.
+comment_graph_1: Estas dos gráficas más abajo muestran la relación entre el índice S&P 500 y las dos variables independientes. Mientras que con la tasa de empleo no muestra una relación directa, sin embargo, con respecto a los tipos de interés, vemos realmente una dependencia lineal entre ellos.
+title_graph_1a: #####     Empleo vs. S&P 500 Precio
+title_graph_1b: ##### Tipos de Interés vs. S&P 500 Precio
+comment_graph_2: La tabla más abajo nos da un conjunto completo de gráficos, el cual, aparte de mostrarnos los anteriores, siguiendo la diagonal podemos ver las distribuciones correspondientes para cada variable:
+title_graph_2: ##### Relación entre todas las variables
+comment_plane: Después de aplicar un modelo de *Regresión Lineal Múltiple*, ésta es la ecuación del **plano** predictivo:
+comment_parameters: Los siguientes parámetros nos hablan acerca de la efectividad de nuestro modelo:
+comment_params_result: Por ejemplo, **R2 (coeficiente de determinación)** tiene que ver con una buena capacidad de predicción del modelo, en tanto en cuanto el valor se acerque a 1. Por tanto, puesto que el resultado es **0.9** aproximadamente, podemos concluir que el modelo realizará una predicción bastante buena. **R2 ajustado** simplemente añade una penalización influida por el número de variables independientes. **MAPE (Error de Porcentaje Absoluto Medio)** está cercano al **2%**, por tanto, indica que la precisión de nuestro modelo es muy alta.
+comment_final_1: A continuación podremos evaluar visualmente el comportamiento de nuestro modelo.
+comment_final_2: Seleccionando uno de los *Puntos de los Datos de Prueba*, podremos comparar cómo de cerca están los puntos **actuales** (*azul*) de los **estimados** (*rojo*).
+test_data_point: Puntos Prueba
+Actual value: Valor real
+Prediction value: Valor estimado
+cam_elevation: Elevación cámara
+cam_rotation: Rotación cámara
+title_final_graph: S&P 500 Precio vs. Tipos de Interés y Empleo
+legend_1_final_graph: Todas preds.
+legend_2_final_graph: Pred. (punto)
+legend_3_final_graph: Real (punto)

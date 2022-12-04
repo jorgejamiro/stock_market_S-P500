@@ -1,0 +1,34 @@
+title: <h2 align='center'>Stock Market Prediction</h2>
+intro_1: **S&P 500 (Standard & Poor's 500)** is a *stock market index* tracking the stock performance of 500 large companies listed on *stock exchanges* in the United States.
+intro_2: In this project, our goal is to predict the S&P 500 stock index based on the following **interest rates** and **employment rates**:
+Interest Rates: Interest Rates
+Employment: Employment
+S&P 500 Price: S&P 500 Price
+count: Count
+mean: Mean
+std: Standard Deviation (SD)
+min: Minimum
+25%: First Quartile (Q1)
+50%: Median / Second Quartile (Q2)
+75%: Third Quartile (Q3)
+max: Maximum
+comment_describe: The table above shows some interesting statistical data from our dataframe. For instance, our dataframe has a thousand data entries and the mean of interest rates is 2.19 roughly.
+comment_graph_1: These two graphs below show the relationship between the S&P 500 index and the two independent variables. Whereas the number of employments doesn't show a straight relationship with it, however, when it comes to interest rates we do see a linear dependency between them.
+title_graph_1a: #####     Employment vs. S&P 500 Price
+title_graph_1b: ##### Interest Rates vs. S&P 500 Price
+comment_graph_2: The table below gives us a complete set of graphs, which aside from showing the former ones, along the diagonal we're able to see the corresponding distributions of each variable:
+title_graph_2: ##### Relationship among all variables
+comment_plane: After applying *Multiple Linear Regression* model, this is the predictive **plane**'s equation:
+comment_parameters: The following parameters tell us about the performance of our model:
+comment_params_result: For example, **R2 score (coefficient of determination)** has to do with a good predictability of the model as long as the value is close to 1. Therefore, because the value is **0.9** roughly, we may conclude that the model will do a quite good prediction. **Adjusted R2** simply adds a penalty influenced by the number of independent variables. **MAPE (Mean Absolute Percentage Error)** is near **2%**, hence our model's accuracy is very high.
+comment_final_1: Now we can assess our model's behaviour visually.
+comment_final_2: Selecting one of the *Test Data Points*, we will be able to compare how close **actual** (*blue*) and **predicted points** (*red*) are.
+test_data_point: Test Data Points
+Actual value: Actual Value
+Prediction value: Prediction value
+cam_elevation: Camera elevation
+cam_rotation: Camera rotation
+title_final_graph: S&P 500 Price vs. Interest Rates & Employment
+legend_1_final_graph: All preds.
+legend_2_final_graph: Pred. (point)
+legend_3_final_graph: Actual (point)
